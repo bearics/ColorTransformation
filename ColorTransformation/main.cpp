@@ -116,7 +116,7 @@ void main()
 	FileRead("orange.raw", orangeArr2D, HEIGHT, WIDTH);
 	WhiteBalancing(orangeArr2D, whiteArr2D, { 300,200 });
 
-	FileWrite("white1.raw", whiteArr2D, HEIGHT, WIDTH);
+	FileWrite("white.raw", whiteArr2D, HEIGHT, WIDTH);
 
 	return;
 }
