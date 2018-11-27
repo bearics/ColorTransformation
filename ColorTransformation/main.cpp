@@ -82,11 +82,11 @@ template<typename T> void WhiteBalancing(T** in, T** out, Point pos)
 	unsigned char temp;
 	double rate[3] = { 0,0,0 };
 	unsigned char* position = (unsigned char*)addressof(in[pos.y][pos.x]);
+
 	for (int i = 0; i < 3; i++)
 	{
 		rate[i] = 255.0 / *(position + i);
 	}
-
 
 	for (int y = 0; y < HEIGHT; y++)
 	{
